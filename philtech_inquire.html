@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inquire - PhilTech School</title>
+    <link rel="stylesheet" href="philtech_inquire.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header-left">
+            <img src="logo.png" alt="PhilTech Logo" class="logo">
+            <h1 class="school-name">PhilTech</h1>
+        </div>
+        <div class="header-right">
+            <nav class="nav-menu">
+                <a href="philtech_home.html" class="nav-link">Home</a>
+                <a href="philtech_inquire.html" class="nav-link active">Inquire</a>
+                <a href="philtech_apply.html" class="nav-link">Apply</a>
+                <div class="search-icon" onclick="toggleSearch()">
+                    <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                </div>
+                <div class="menu-toggle" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="search-bar" id="searchBar">
+        <div class="search-container">
+            <input type="text" placeholder="Search..." class="search-input">
+            <button class="search-btn">Search</button>
+        </div>
+    </div>
+
+    <div class="slide-menu" id="slideMenu">
+        <div class="menu-header">
+            <h2>Menu</h2>
+            <button class="close-btn" onclick="toggleMenu()">&times;</button>
+        </div>
+        <ul class="menu-list">
+            <li><a href="philtech_discover.html">Discover</a></li>
+            <li><a href="philtech_admissions.html">Admissions</a></li>
+            <li><a href="philtech_offers.html">Offers</a></li>
+            <li><a href="philtech_connect.html">Connect</a></li>
+            <li><a href="philtech_developer.html">Developer Info</a></li>
+        </ul>
+    </div>
+
+    <div id="statusMessage" style="display: none; position: fixed; top: 100px; left: 50%; transform: translateX(-50%); z-index: 1000; padding: 1rem 2rem; border-radius: 5px; font-weight: bold; box-shadow: 0 4px 10px rgba(0,0,0,0.2);"></div>
+
+    <main>
+        <section class="welcome-banner">
+            <img src="banner.jpg" alt="PhilTech Inquire Banner" class="banner-img">
+            <img src="logo.png" alt="PhilTech Logo" class="center-logo">
+            <div class="banner-content">
+                <h2>Philippine Technological Institute of Science Arts and Trade Central Inc.</h2>
+                <h2>G.M.A Branch</h2>
+                <p class="school-quote">Global Success Through Academic Excellence</p>
+            </div>
+        </section>
+
+        <section class="get-in-touch">
+            <h2>Get in Touch</h2>
+            <div class="contact-container">
+                <div class="contact-form-container">
+                    <div class="icon-container">
+                        <svg class="email-icon" viewBox="0 0 24 24" fill="none" stroke="maroon" stroke-width="1.5">
+                            <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                            <path d="M22 7L12 14L2 7"></path>
+                        </svg>
+                    </div>
+                    
+                    <div class="form-container">
+                        <div class="contact-header">
+                            <h3>Contact Us</h3>
+                        </div>
+                        <form id="contactForm">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                            
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                            
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone" required>
+                            
+                            <label for="subject">Subject</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="admission">Admission</option>
+                                <option value="other">Other</option>
+                            </select>
+                            
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required></textarea>
+                            
+                            <button type="submit" class="submit-btn" id="submitBtn">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <img src="logo.png" alt="PhilTech Logo" class="footer-logo">
+                <h3>PhilTech</h3>
+                <p class="footer-quote">Global Success Through Academic Excellence</p>
+            </div>
+            <div class="footer-middle">
+                <h3>Contact Us</h3>
+                <p>philtechtestwebsite@gmail.com</p>
+                <p>(046) 409-94-90</p>
+            </div>
+            <div class="footer-right">
+                <h3>Location</h3>
+                <p>2nd Floor, CRDM Governor's Drive,</p>
+                <p>Brgy. Maderan G.M.A., Cavite</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2010 PhilTech. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="philtech_script.js"></script>
+</body>
+</html>
