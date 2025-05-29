@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admissions - PhilTech School</title>
+    <link rel="stylesheet" href="philtech_admissions.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-left">
+            <img src="logo.png" alt="PhilTech Logo" class="logo">
+            <h1 class="school-name">PhilTech</h1>
+        </div>
+        <div class="header-right">
+            <nav class="nav-menu">
+                <a href="philtech_home.html" class="nav-link">Home</a>
+                <a href="philtech_inquire.html" class="nav-link">Inquire</a>
+                <a href="philtech_apply.html" class="nav-link">Apply</a>
+                <div class="search-icon" onclick="toggleSearch()">
+                    <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                </div>
+                <div class="menu-toggle" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="search-bar" id="searchBar">
+        <div class="search-container">
+            <input type="text" placeholder="Search..." class="search-input">
+            <button class="search-btn">Search</button>
+        </div>
+    </div>
+
+    <div class="slide-menu" id="slideMenu">
+        <div class="menu-header">
+            <h2>Menu</h2>
+            <button class="close-btn" onclick="toggleMenu()">&times;</button>
+        </div>
+        <ul class="menu-list">
+            <li><a href="philtech_discover.html">Discover</a></li>
+            <li><a href="philtech_admissions.html">Admissions</a></li>
+            <li><a href="philtech_offers.html">Offers</a></li>
+            <li><a href="philtech_connect.html">Connect</a></li>
+            <li><a href="philtech_developer.html">Developer Info</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <section class="welcome-banner">
+            <img src="banner.jpg" alt="PhilTech Banner" class="banner-img">
+            <img src="logo.png" alt="PhilTech Logo" class="center-logo">
+            <div class="banner-content">
+                <h2>Philippine Technological Institute of Science Arts and Trade Central Inc.</h2>
+                <h2>G.M.A Branch</h2>
+                <p class="school-quote">Global Success Through Academic Excellence</p>
+            </div>
+        </section>
+
+<section class="admission-criteria">
+    <div class="criteria-container">
+        <h2 class="criteria-title">Admission Criteria</h2>
+        <div class="criteria-underline"></div>
+        
+        <div class="criteria-cards">
+            <div class="criteria-card">
+                <h3 class="card-title">Senior High School</h3>
+                <ul class="criteria-list">
+                    <li>Junior High School Report Card (Form 138)</li>
+                    <li>Certificate of Good Moral Character</li>
+                    <li>Birth Certificate</li>
+                    <li>2x2 ID Picture (4 pcs)</li>
+                    <li>Entrance Exam Result</li>
+                </ul>
+            </div>
+            
+            <div class="criteria-card">
+                <h3 class="card-title">College</h3>
+                <ul class="criteria-list">
+                    <li>Senior High School Report Card (Form 138)</li>
+                    <li>Certificate of Good Moral Character</li>
+                    <li>Birth Certificate</li>
+                    <li>2x2 ID Picture (4 pcs)</li>
+                    <li>Certificate of Graduation or Diploma</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="curriculum-section">
+    <div class="curriculum-container">
+        <h2 class="curriculum-title">Curriculum for College</h2>
+        <div class="curriculum-underline"></div>
+        
+        <div class="program-section">
+            <h3 class="program-title">Bachelor of Science in Office Administration</h3>
+            <div class="curriculum-cards">
+                <div class="curriculum-card">
+                    <div class="curriculum-table">
+                        <div class="table-header">
+                            <h4>FIRST SEMESTER, 1ST YEAR</h4>
+                        </div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>SUBJECT</th>
+                                    <th>CODE</th>
+                                    <th>PREREQUISITES</th>
+                                    <th>UNITS</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>Understanding the Self</td><td>GE1</td><td>None</td><td>3</td></tr>
+                                <tr><td>Komunikasyon sa Akademikong Filipino</td><td>FIL101</td><td>None</td><td>3</td></tr>
+                                <tr><td>Mathematics in the Modern World</td><td>GE2</td><td>None</td><td>3</td></tr>
+                                <tr><td>Foundations of Shorthand</td><td>OACC101</td><td>None</td><td>3</td></tr>
+                                <tr><td>Keyboarding and Documents Processing</td><td>OACC102</td><td>None</td><td>3</td></tr>
+                                <tr><td>Physical Activities towards Health and Fitness 1</td><td>PATHFIT 1</td><td>None</td><td>2</td></tr>
+                                <tr><td>National Service Training Program 1</td><td>NSTP 1</td><td>None</td><td>3</td></tr>
+                            </tbody>
+                            <tfoot>
+                                <tr><td colspan="3"><strong>TOTAL</strong></td><td><strong>20</strong></td></tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="curriculum-card">
+                    <div class="curriculum-table">
+                        <div class="table-header">
+                            <h4>SECOND SEMESTER, FIRST YEAR</h4>
+                        </div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>SUBJECT</th>
+                                    <th>CODE</th>
+                                    <th>PREREQUISITES</th>
+                                    <th>UNITS</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>The Contemporary World</td><td>GE3</td><td>None</td><td>3</td></tr>
+                                <tr><td>Readings in Philippine History</td><td>GE4</td><td>None</td><td>3</td></tr>
+                                <tr><td>PhilTech Life and Spirit</td><td>PLS</td><td>None</td><td>2</td></tr>
+                                <tr><td>Personal and Professional Development</td><td>OACC103</td><td>None</td><td>3</td></tr>
+                                <tr><td>Advance Shorthand</td><td>OACC104</td><td>OACC101</td><td>3</td></tr>
+                                <tr><td>Physical Activities towards Health and Fitness 2</td><td>PATHFIT 2</td><td>PATHFIT 1</td><td>2</td></tr>
+                                <tr><td>National Service Training Program 2</td><td>NSTP2</td><td>NSTP 1</td><td>3</td></tr>
+                            </tbody>
+                            <tfoot>
+                                <tr><td colspan="3"><strong>TOTAL</strong></td><td><strong>19</strong></td></tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="curriculum-cards">
+                <div class="curriculum-card">
+                    <div class="curriculum-table">
+                        <div class="table-header">
+                            <h4>FIRST SEMESTER, SECOND YEAR</h4>
+                        </div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>SUBJECT</th>
+                                    <th>CODE</th>
+                                    <th>PREREQUISITES</th>
+                                    <th>UNITS</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>Purposive Communication</td><td>GE5</td><td>None</td><td>3</td></tr>
+                                <tr><td>Art Appreciation</td><td>GE6</td><td>None</td><td>3</td></tr>
+                                <tr><td>Values Formation</td><td>VAL</td><td>None</td><td>3</td></tr>
+                                <tr><td>Operations Management (TQM)</td><td>CBME1</td><td>None</td><td>3</td></tr>
+                                <tr><td>Customer Relations</td><td>OACC205</td><td>OACC103</td><td>3</td></tr>
+                                <tr><td>Administrative Office Procedures and Management</td><td>OACC206</td><td>None</td><td>3</td></tr>
+                                <tr><td>Physical Activities Towards Health and Fitness 3</td><td>PATHFIT 3</td><td>PATHFIT 2</td><td>2</td></tr>
+                            </tbody>
+                            <tfoot>
+                                <tr><td colspan="3"><strong>TOTAL</strong></td><td><strong>20</strong></td></tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="curriculum-card">
+                    <div class="curriculum-table">
+                        <div class="table-header">
+                            <h4>SECOND SEMESTER, SECOND YEAR</h4>
+                        </div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>SUBJECT</th>
+                                    <th>CODE</th>
+                                    <th>PREREQUISITES</th>
+                                    <th>UNITS</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>Gender and Society</td><td>GEE1</td><td>None</td><td>3</td></tr>
+                                <tr><td>Ethics</td><td>GE7</td><td>None</td><td>3</td></tr>
+                                <tr><td>Business Report Writing</td><td>OACC207</td><td>None</td><td>3</td></tr>
+                                <tr><td>Integrated Software Applications</td><td>OACC208</td><td>OACC102</td><td>3</td></tr>
+                                <tr><td>Entrepreneurial Behavior and Competencies</td><td>OACC209</td><td>None</td><td>3</td></tr>
+                                <tr><td>Physical Activities towards Health and Fitness 4</td><td>PATHFIT 4</td><td>PATHFIT 3</td><td>2</td></tr>
+                            </tbody>
+                            <tfoot>
+                                <tr><td colspan="3"><strong>TOTAL</strong></td><td><strong>17</strong></td></tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="curriculum-cards">
+                <div class="curriculum-card">
+                    <div class="curriculum-table">
+                        <div class="table-header">
+                            <h4>SUMMER CLASS</h4>
+                        </div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>SUBJECT</th>
+                                    <th>CODE</th>
+                                    <th>PREREQUISITES</th>
+                                    <th>UNITS</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>Office Administration Internship 300hrs.</td><td>OACC210</td><td>-</td><td>-</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="curriculum-cards">
+                <div class="curriculum-card">
+                    <div class="curriculum-table">
+                        <div class="table-header">
+                            <h4>FIRST SEMESTER, THIRD YEAR</h4>
+                        </div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>SUBJECT</th>
+                                    <th>CODE</th>
+                                    <th>PREREQUISITES</th>
+                                    <th>UNITS</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>Rizal's Life and Works</td><td>GE8</td><td>None</td><td>3</td></tr>
+                                <tr><td>Internet Research for Business</td><td>OACC311</td><td>OACC207</td><td>3</td></tr>
+                                <tr><td>Machine Shorthand 1</td><td>OACC312</td><td>OACC101</td><td>3</td></tr>
+                                <tr><td>Customer Analytics</td><td>ELEC1</td><td>OACC103</td><td>3</td></tr>
+                                <tr><td>Web Design</td><td>ELEC2</td><td>None</td><td>3</td></tr>
+                            </tbody>
+                            <tfoot>
+                                <tr><td colspan="3"><strong>TOTAL</strong></td><td><strong>15</strong></td></tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="curriculum-card">
+                    <div class="curriculum-table">
+                        <div class="table-header">
+                            <h4>SECOND SEMESTER, THIRD YEAR</h4>
+                        </div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>SUBJECT</th>
+                                    <th>CODE</th>
+                                    <th>PREREQUISITES</th>
+                                    <th>UNITS</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>Legal Office Procedures</td><td>ELEC3</td><td>None</td><td>3</td></tr>
+                                <tr><td>Events Management</td><td>OACC313</td><td>None</td><td>3</td></tr>
+                                <tr><td>Business Law</td><td>OACC314</td><td>None</td><td>3</td></tr>
+                                <tr><td>Accounting 1</td><td>ACCCG1</td><td>None</td><td>3</td></tr>
+                            </tbody>
+                            <tfoot>
+                                <tr><td colspan="3"><strong>TOTAL</strong></td><td><strong>12</strong></td></tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="curriculum-cards">
+                <div class="curriculum-card">
+                    <div class="curriculum-table">
+                        <div class="table-header">
+                            <h4>FIRST SEMESTER, FOURTH YEAR</h4>
+                        </div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>SUBJECT</th>
+                                    <th>CODE</th>
+                                    <th>PREREQUISITES</th>
+                                    <th>UNITS</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>Strategic Management</td><td>CBME2</td><td>None</td><td>3</td></tr>
+                                <tr><td>Taxation</td><td>OACC415</td><td>ACCCG1</td><td>3</td></tr>
+                                <tr><td>Introduction to Project Management</td><td>ELEC4</td><td>None</td><td>3</td></tr>
+                                <tr><td>Accounting 2</td><td>ELEC5</td><td>ACCCG1</td><td>3</td></tr>
+                            </tbody>
+                            <tfoot>
+                                <tr><td colspan="3"><strong>TOTAL</strong></td><td><strong>12</strong></td></tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="curriculum-card">
+                    <div class="curriculum-table">
+                        <div class="table-header">
+                            <h4>SECOND SEMESTER, FOURTH YEAR</h4>
+                        </div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>SUBJECT</th>
+                                    <th>CODE</th>
+                                    <th>PREREQUISITES</th>
+                                    <th>UNITS</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>Legal or Medical Office Internship 300 hrs.</td><td>ELEC6</td><td>None</td><td>3</td></tr>
+                            </tbody>
+                            <tfoot>
+                                <tr><td colspan="3"><strong>TOTAL</strong></td><td><strong>3</strong></td></tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<div class="program-section">
+    <h3 class="program-title">Bachelor of Science in Computer Science</h3>
+    
+    <div class="curriculum-cards">
+        <div class="curriculum-card">
+            <div class="curriculum-table">
+                <div class="table-header">
+                    <h4>FIRST YEAR - FIRST SEMESTER</h4>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>SUBJECT</th>
+                            <th>CODE</th>
+                            <th>PREREQUISITES</th>
+                            <th>UNITS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Understanding the Self</td><td>GE1</td><td>None</td><td>3</td></tr>
+                        <tr><td>Mathematics in the Modern World</td><td>GE2</td><td>None</td><td>3</td></tr>
+                        <tr><td>Introduction to Computing with Productivity Tools</td><td>CC111</td><td>None</td><td>3</td></tr>
+                        <tr><td>Fundamentals of Programming 1</td><td>CC112</td><td>None</td><td>3</td></tr>
+                        <tr><td>PhilTech Life and Spirit</td><td>PLS</td><td>None</td><td>2</td></tr>
+                        <tr><td>Readings in the Philippine History</td><td>GE3</td><td>None</td><td>3</td></tr>
+                        <tr><td>Physical Fitness 1</td><td>PE1</td><td>None</td><td>2</td></tr>
+                        <tr><td>National Service Training Program 1</td><td>NSTP1</td><td>None</td><td>3</td></tr>
+                    </tbody>
+                    <tfoot>
+                        <tr><td colspan="3"><strong>TOTAL</strong></td><td><strong>22</strong></td></tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+
+        <div class="curriculum-card">
+            <div class="curriculum-table">
+                <div class="table-header">
+                    <h4>FIRST YEAR - SECOND SEMESTER</h4>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>SUBJECT</th>
+                            <th>CODE</th>
+                            <th>PREREQUISITES</th>
+                            <th>UNITS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Ethics</td><td>GE4</td><td>None</td><td>3</td></tr>
+                        <tr><td>Web System and Technologies</td><td>WST</td><td>CC111</td><td>3</td></tr>
+                        <tr><td>Art Appreciation</td><td>GE5</td><td>None</td><td>3</td></tr>
+                        <tr><td>Intermediate Programming</td><td>CC123</td><td>CC112</td><td>3</td></tr>
+                        <tr><td>Computer System Servicing</td><td>CSS121</td><td>CC111</td><td>2</td></tr>
+                        <tr><td>Physical Fitness 2</td><td>PE2</td><td>PE111</td><td>2</td></tr>
+                        <tr><td>National Service Training Program 2</td><td>NSTP2</td><td>NSTP111</td><td>3</td></tr>
+                        <tr><td>Visual Graphics Design</td><td>VGD</td><td>None</td><td>3</td></tr>
+                    </tbody>
+                    <tfoot>
+                        <tr><td colspan="3"><strong>TOTAL</strong></td><td><strong>22</strong></td></tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="curriculum-cards">
+        <div class="curriculum-card">
+            <div class="curriculum-table">
+                <div class="table-header">
+                    <h4>SECOND YEAR - FIRST SEMESTER</h4>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>SUBJECT</th>
+                            <th>CODE</th>
+                            <th>PREREQUISITES</th>
+                            <th>UNITS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Discrete Structures 1</td><td>DS211</td><td>GE112</td><td>3</td></tr>
+                        <tr><td>Purposive Communication</td><td>GE6</td><td>None</td><td>3</td></tr>
+                        <tr><td>The Contemporary World</td><td>GE7</td><td>None</td><td>3</td></tr>
+                        <tr><td>Kontekstwalisadong Komunikasyon sa Filipino</td><td>FIL1</td><td>None</td><td>3</td></tr>
+                        <tr><td>Data Structures and Algorithms</td><td>CC214</td><td>CC123</td><td>3</td></tr>
+                        <tr><td>Game Art Development</td><td>GAD211</td><td>VGD111</td><td>3</td></tr>
+                        <tr><td>Physical Fitness 3</td><td>PE3</td><td>PE122</td><td>2</td></tr>
+                        <tr><td>Information Management</td><td>CC215</td><td>CC123</td><td>3</td></tr>
+                    </tbody>
+                    <tfoot>
+                        <tr><td colspan="3"><strong>TOTAL</strong></td><td><strong>23</strong></td></tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+
+        <div class="curriculum-card">
+            <div class="curriculum-table">
+                <div class="table-header">
+                    <h4>SECOND YEAR - SECOND SEMESTER</h4>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>SUBJECT</th>
+                            <th>CODE</th>
+                            <th>PREREQUISITES</th>
+                            <th>UNITS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Science, Technology and Society</td><td>GE8</td><td>None</td><td>3</td></tr>
+                        <tr><td>Discrete Structures 2</td><td>DS212</td><td>DS121</td><td>3</td></tr>
+                        <tr><td>System Analysis and Design</td><td>SAD212</td><td>CC225</td><td>3</td></tr>
+                        <tr><td>Object-Oriented Programming</td><td>OOP212</td><td>CC214</td><td>3</td></tr>
+                        <tr><td>Panitikan</td><td>FIL2</td><td>FIL311</td><td>3</td></tr>
+                        <tr><td>Human Computer Interaction</td><td>HCI212</td><td>CC111</td><td>3</td></tr>
+                        <tr><td>Architecture and Organization</td><td>AO212</td><td>CC111</td><td>3</td></tr>
+                        <tr><td>Physical Fitness 4</td><td>PE4</td><td>PE213</td><td>2</td></tr>
+                    </tbody>
+                    <tfoot>
+                        <tr><td colspan="3"><strong>TOTAL</strong></td><td><strong>23</strong></td></tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="curriculum-cards">
+        <div class="curriculum-card">
+            <div class="curriculum-table">
+                <div class="table-header">
+                    <h4>THIRD YEAR - FIRST SEMESTER</h4>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>SUBJECT</th>
+                            <th>CODE</th>
+                            <th>PREREQUISITES</th>
+                            <th>UNITS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Software Engineering 1</td><td>SE311</td><td>None</td><td>3</td></tr>
+                        <tr><td>Automata Theory and Formal Languages</td><td>AL312</td><td>AL222</td><td>3</td></tr>
+                        <tr><td>Social Issues and Professional Practice 1</td><td>SP321</td><td>CC111</td><td>3</td></tr>
+                        <tr><td>Application Dev't and Emerging Technologies</td><td>CC316</td><td>AR311</td><td>3</td></tr>
+                        <tr><td>Information Assurance and Security</td><td>IAS311</td><td>CC111</td><td>3</td></tr>
+                        <tr><td>CS Professional Elective 1</td><td>ELEC311</td><td>3RD YR ST</td><td>3</td></tr>
+                    </tbody>
+                    <tfoot>
+                        <tr><td colspan="3"><strong>TOTAL</strong></td><td><strong>18</strong></td></tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+
+        <div class="curriculum-card">
+            <div class="curriculum-table">
+                <div class="table-header">
+                    <h4>THIRD YEAR - SECOND SEMESTER</h4>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>SUBJECT</th>
+                            <th>CODE</th>
+                            <th>PREREQUISITES</th>
+                            <th>UNITS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Probability and Statistics</td><td>MathElec</td><td>GE112</td><td>3</td></tr>
+                        <tr><td>Programming Languages</td><td>PL321</td><td>SE211</td><td>3</td></tr>
+                        <tr><td>Software Engineering 2</td><td>SE322</td><td>SE321</td><td>3</td></tr>
+                        <tr><td>Algorithms and Complexity</td><td>AL222</td><td>3RD YR ST</td><td>3</td></tr>
+                        <tr><td>Life and Works of Rizal</td><td>GEM421</td><td>None</td><td>3</td></tr>
+                        <tr><td>CS Professional Elective 2</td><td>ELEC322</td><td>ELEC311</td><td>3</td></tr>
+                    </tbody>
+                    <tfoot>
+                        <tr><td colspan="3"><strong>TOTAL</strong></td><td><strong>18</strong></td></tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="curriculum-cards">
+        <div class="curriculum-card">
+            <div class="curriculum-table">
+                <div class="table-header">
+                    <h4>SUMMER</h4>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>SUBJECT</th>
+                            <th>CODE</th>
+                            <th>PREREQUISITES</th>
+                            <th>UNITS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Practicum (162 hrs)</td><td>PRAC411</td><td>4TH YR ST</td><td>3</td></tr>
+                    </tbody>
+                    <tfoot>
+                        <tr><td colspan="3"><strong>TOTAL</strong></td><td><strong>3</strong></td></tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="curriculum-cards">
+        <div class="curriculum-card">
+            <div class="curriculum-table">
+                <div class="table-header">
+                    <h4>FOURTH YEAR - FIRST SEMESTER</h4>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>SUBJECT</th>
+                            <th>CODE</th>
+                            <th>PREREQUISITES</th>
+                            <th>UNITS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>CS Thesis 1</td><td>THS411</td><td>4TH YR ST</td><td>3</td></tr>
+                        <tr><td>CS Professional Elective 3</td><td>ELEC413</td><td>3RD YR ST</td><td>3</td></tr>
+                        <tr><td>Principles of Operating Systems</td><td>OS411</td><td>CC111</td><td>3</td></tr>
+                        <tr><td>The Entrepreneurial Mind</td><td>GEE411</td><td>None</td><td>3</td></tr>
+                    </tbody>
+                    <tfoot>
+                        <tr><td colspan="3"><strong>TOTAL</strong></td><td><strong>12</strong></td></tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+
+        <div class="curriculum-card">
+            <div class="curriculum-table">
+                <div class="table-header">
+                    <h4>FOURTH YEAR - SECOND SEMESTER</h4>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>SUBJECT</th>
+                            <th>CODE</th>
+                            <th>PREREQUISITES</th>
+                            <th>UNITS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>CS Thesis 2</td><td>THS422</td><td>THS411</td><td>3</td></tr>
+                        <tr><td>Networks and Communications</td><td>NC421</td><td>CC111</td><td>3</td></tr>
+                        <tr><td>MIS with ERP (SAP B1)</td><td>SAP421</td><td>None</td><td>3</td></tr>
+                    </tbody>
+                    <tfoot>
+                        <tr><td colspan="3"><strong>TOTAL</strong></td><td><strong>9</strong></td></tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="program-section">
+    <h3 class="program-title">Bachelor of Technical Vocational Teacher Education<br>Major in Food and Service Management</h3>
+    
+    <div class="curriculum-cards">
+        <div class="curriculum-card">
+            <div class="curriculum-table">
+                <div class="table-header">
+                    <h4>FIRST YEAR - FIRST SEMESTER</h4>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>SUBJECT</th>
+                            <th>CODE</th>
+                            <th>PREREQUISITES</th>
+                            <th>UNITS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>The Child and adolescent learner and learner and learning principles</td><td>FCC101</td><td>-</td><td>3</td></tr>
+                        <tr><td>The Teaching Profession</td><td>FCC102</td><td>-</td><td>3</td></tr>
+                        <tr><td>Teaching ICT as an Explanatory Course</td><td>TLE101</td><td>-</td><td>3</td></tr>
+                        <tr><td>Home Economics Literacy</td><td>TLE102</td><td>-</td><td>3</td></tr>
+                        <tr><td>Purposive Communication</td><td>GE101</td><td>-</td><td>3</td></tr>
+                        <tr><td>Readings in Philippine History</td><td>GE102</td><td>-</td><td>3</td></tr>
+                        <tr><td>Mathematics in the Modern World</td><td>GE103</td><td>-</td><td>3</td></tr>
+                        <tr><td>Physical Activities towards Health and Fitness 1</td><td>PATHFIT 1</td><td>-</td><td>2</td></tr>
+                        <tr><td>National Service Training Program 1</td><td>NSTP1</td><td>-</td><td>3</td></tr>
+                    </tbody>
+                    <tfoot>
+                        <tr><td colspan="3"><strong>TOTAL</strong></td><td><strong>26</strong></td></tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+
+        <div class="curriculum-card">
+            <div class="curriculum-table">
+                <div class="table-header">
+                    <h4>FIRST YEAR - SECOND SEMESTER</h4>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>SUBJECT</th>
+                            <th>CODE</th>
+                            <th>PREREQUISITES</th>
+                            <th>UNITS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Building and Enhancing New Literacy across the Curriculum with Emphasis on the 21st Century Skills</td><td>PCK101</td><td>-</td><td>3</td></tr>
+                        <tr><td>Foundation of Special and Inclusive Education</td><td>FCC103</td><td>-</td><td>3</td></tr>
+                        <tr><td>Facilitating Learner-Centered Teaching: The Learner-Centered Approaches with Emphasis on Trainers</td><td>PCK102</td><td>-</td><td>3</td></tr>
+                        <tr><td>Environmental Science</td><td>GEE1</td><td>-</td><td>3</td></tr>
+                        <tr><td>Understanding the Self</td><td>GE104</td><td>-</td><td>3</td></tr>
+                        <tr><td>The Contemporary World</td><td>GE105</td><td>-</td><td>3</td></tr>
+                        <tr><td>Introduction to Industrial Arts</td><td>TLE103</td><td>-</td><td>3</td></tr>
+                        <tr><td>Occupational Safety and Health Practices</td><td>MAJOR1</td><td>-</td><td>3</td></tr>
+                        <tr><td>Physical Activities Toward Health and Fitness 2</td><td>PATHFIT 2</td><td>PathFit 1</td><td>2</td></tr>
+                        <tr><td>National Service Training Program 2</td><td>NSTP2</td><td>NSTP 1</td><td>3</td></tr>
+                    </tbody>
+                    <tfoot>
+                        <tr><td colspan="3"><strong>TOTAL</strong></td><td><strong>29</strong></td></tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="curriculum-cards">
+        <div class="curriculum-card">
+            <div class="curriculum-table">
+                <div class="table-header">
+                    <h4>SECOND YEAR - FIRST SEMESTER</h4>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>SUBJECT</th>
+                            <th>CODE</th>
+                            <th>PREREQUISITES</th>
+                            <th>UNITS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>The Teacher and the Community, School Culture and Organizational Leadership with Focus on Roles of Trainers</td><td>FCC104</td><td>-</td><td>3</td></tr>
+                        <tr><td>The Andragogy of Learning including Focus Roles of Trainers Methodology I</td><td>PCK103</td><td>-</td><td>3</td></tr>
+                        <tr><td>Technology for Teaching and Learning 1</td><td>PCK104</td><td>-</td><td>3</td></tr>
+                        <tr><td>Assessment in Student Learning 1</td><td>PCK105</td><td>-</td><td>3</td></tr>
+                        <tr><td>Introduction to Agriculture and Fisheries</td><td>TLE104</td><td>-</td><td>3</td></tr>
+                        <tr><td>Ethics</td><td>GE106</td><td>-</td><td>3</td></tr>
+                        <tr><td>Living in the IT Era</td><td>GEE2</td><td>-</td><td>3</td></tr>
+                        <tr><td>Food Selection and Preparation</td><td>MAJOR2</td><td>-</td><td>3</td></tr>
+                        <tr><td>Physical Activities towards Health and Fitness 3</td><td>PATHFIT 3</td><td>PATHFIT 2</td><td>2</td></tr>
+                    </tbody>
+                    <tfoot>
+                        <tr><td colspan="3"><strong>TOTAL</strong></td><td><strong>26</strong></td></tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+
+        <div class="curriculum-card">
+            <div class="curriculum-table">
+                <div class="table-header">
+                    <h4>SECOND YEAR - SECOND SEMESTER</h4>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>SUBJECT</th>
+                            <th>CODE</th>
+                            <th>PREREQUISITES</th>
+                            <th>UNITS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Curriculum Development and Evaluation with Emphasis on Trainers Methodology</td><td>PCK106</td><td>-</td><td>3</td></tr>
+                        <tr><td>Technology for Teaching and Learning 2</td><td>AS101</td><td>PCK104</td><td>3</td></tr>
+                        <tr><td>Assessment in Student Learning 2</td><td>PCK107</td><td>PCK105</td><td>3</td></tr>
+                        <tr><td>Teaching the Common Competencies in Home Economics</td><td>TLE105</td><td>-</td><td>3</td></tr>
+                        <tr><td>Reading Visual Arts</td><td>GEE3</td><td>-</td><td>3</td></tr>
+                        <tr><td>Science, Technology and Society</td><td>GE107</td><td>-</td><td>3</td></tr>
+                        <tr><td>Meal Management</td><td>MAJOR 3</td><td>-</td><td>3</td></tr>
+                        <tr><td>Basic Baking</td><td>MAJOR 4</td><td>-</td><td>3</td></tr>
+                        <tr><td>Physical Activities towards Health and Fitness 4</td><td>PATHFIT 4</td><td>PE3</td><td>2</td></tr>
+                    </tbody>
+                    <tfoot>
+                        <tr><td colspan="3"><strong>TOTAL</strong></td><td><strong>26</strong></td></tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="curriculum-cards">
+        <div class="curriculum-card">
+            <div class="curriculum-table">
+                <div class="table-header">
+                    <h4>THIRD YEAR - FIRST SEMESTER</h4>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>SUBJECT</th>
+                            <th>CODE</th>
+                            <th>PREREQUISITES</th>
+                            <th>UNITS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Teaching the Common Competencies in ICT</td><td>TLE 6</td><td>-</td><td>3</td></tr>
+                        <tr><td>Teaching the Common Competencies in Ind. ARTS</td><td>TLE 7</td><td>-</td><td>3</td></tr>
+                        <tr><td>Art Appreciation</td><td>GE 107</td><td>-</td><td>3</td></tr>
+                        <tr><td>Entrepreneurship</td><td>TLE 8</td><td>-</td><td>3</td></tr>
+                        <tr><td>Food Processing, Packaging and Labelling</td><td>MAJOR 5</td><td>-</td><td>3</td></tr>
+                        <tr><td>Advance Baking</td><td>MAJOR 6</td><td>-</td><td>3</td></tr>
+                        <tr><td>International Cuisine</td><td>MAJOR 7</td><td>-</td><td>3</td></tr>
+                        <tr><td>Events Management</td><td>MAJOR 8</td><td>-</td><td>3</td></tr>
+                    </tbody>
+                    <tfoot>
+                        <tr><td colspan="3"><strong>TOTAL</strong></td><td><strong>24</strong></td></tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+
+        <div class="curriculum-card">
+            <div class="curriculum-table">
+                <div class="table-header">
+                    <h4>THIRD YEAR - SECOND SEMESTER</h4>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>SUBJECT</th>
+                            <th>CODE</th>
+                            <th>PREREQUISITES</th>
+                            <th>UNITS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Field Study 1</td><td>ELC 301</td><td>-</td><td>3</td></tr>
+                        <tr><td>Teaching the Common Competencies in Agriculture and Fisheries</td><td>TLE 9</td><td>-</td><td>3</td></tr>
+                        <tr><td>Technology Research 1 (Methods of Research)</td><td>AC301</td><td>-</td><td>3</td></tr>
+                        <tr><td>Retorika</td><td>GEE4</td><td>-</td><td>3</td></tr>
+                        <tr><td>Quantity Cookery</td><td>MAJOR 9</td><td>-</td><td>3</td></tr>
+                        <tr><td>Cafeteria and Catering Management</td><td>MAJOR 10</td><td>-</td><td>3</td></tr>
+                        <tr><td>Bartending and Bar Management</td><td>MAJOR 11</td><td>-</td><td>3</td></tr>
+                        <tr><td>Housekeeping Management</td><td>MAJOR 12</td><td>-</td><td>3</td></tr>
+                    </tbody>
+                    <tfoot>
+                        <tr><td colspan="3"><strong>TOTAL</strong></td><td><strong>24</strong></td></tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="curriculum-cards">
+        <div class="curriculum-card">
+            <div class="curriculum-table">
+                <div class="table-header">
+                    <h4>SUMMER</h4>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>SUBJECT</th>
+                            <th>CODE</th>
+                            <th>PREREQUISITES</th>
+                            <th>UNITS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Supervised Industry Training</td><td>AS 102</td><td>-</td><td>3</td></tr>
+                    </tbody>
+                    <tfoot>
+                        <tr><td colspan="3"><strong>TOTAL</strong></td><td><strong>3</strong></td></tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="curriculum-cards">
+        <div class="curriculum-card">
+            <div class="curriculum-table">
+                <div class="table-header">
+                    <h4>FOURTH YEAR - FIRST SEMESTER</h4>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>SUBJECT</th>
+                            <th>CODE</th>
+                            <th>PREREQUISITES</th>
+                            <th>UNITS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Supervised Industry Training</td><td>AS 102</td><td>-</td><td>3</td></tr>
+                        <tr><td>Technology Research 2 (Methods of Research)</td><td>AC302</td><td>-</td><td>3</td></tr>
+                        <tr><td>Field Study 2</td><td>ELC 402</td><td>-</td><td>3</td></tr>
+                        <tr><td>Work-Based Learning with Emphasis on Trainers</td><td>AC303</td><td>-</td><td>3</td></tr>
+                        <tr><td>Gender and Society</td><td>GEE5</td><td>-</td><td>3</td></tr>
+                        <tr><td>Life and Works of Rizal</td><td>GE 108</td><td>-</td><td>3</td></tr>
+                    </tbody>
+                    <tfoot>
+                        <tr><td colspan="3"><strong>TOTAL</strong></td><td><strong>18</strong></td></tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+
+        <div class="curriculum-card">
+            <div class="curriculum-table">
+                <div class="table-header">
+                    <h4>FOURTH YEAR - SECOND SEMESTER</h4>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>SUBJECT</th>
+                            <th>CODE</th>
+                            <th>PREREQUISITES</th>
+                            <th>UNITS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Teaching Internship/Practice Teaching</td><td>ELC 402</td><td>-</td><td>6</td></tr>
+                    </tbody>
+                    <tfoot>
+                        <tr><td colspan="3"><strong>TOTAL</strong></td><td><strong>6</strong></td></tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="curriculum-cards">
+        <div class="curriculum-card">
+            <div class="curriculum-table">
+                <div class="table-header">
+                    <h4>PROGRAM SUMMARY</h4>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>COMPONENT</th>
+                            <th>LECTURE</th>
+                            <th>LAB</th>
+                            <th>TOTAL</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><strong>Total Units</strong></td><td><strong>162</strong></td><td><strong>11</strong></td><td><strong>173</strong></td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <img src="logo.png" alt="PhilTech Logo" class="footer-logo">
+                <h3>PhilTech</h3>
+                <p class="footer-quote">Global Success Through Academic Excellence</p>
+            </div>
+            <div class="footer-middle">
+                <h3>Contact Us</h3>
+                <p>philtechtestwebsite@gmail.com</p>
+                <p>(046) 409-94-90</p>
+            </div>
+            <div class="footer-right">
+                <h3>Location</h3>
+                <p>2nd Floor, CRDM Governor's Drive,</p>
+                <p>Brgy. Maderan G.M.A., Cavite</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2010 PhilTech. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="philtech_script.js"></script>
+</body>

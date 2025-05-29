@@ -1,0 +1,626 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Georgia", serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: rgb(255, 233, 233);
+}
+
+.header {
+    background-color: #4e0404;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+}
+
+.school-name {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.search-icon {
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.search-icon:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.menu-toggle {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    padding: 0.5rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.menu-toggle:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    border-radius: 2px;
+}
+
+.search-bar {
+    background-color: #640505;
+    opacity: 0.95;
+    padding: 1rem 2rem;
+    position: fixed;
+    top: 88px;
+    width: 100%;
+    z-index: 999;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: none;
+}
+
+.search-container {
+    display: flex;
+    gap: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.search-input {
+    flex: 1;
+    padding: 0.5rem;
+    border: 2px solid maroon;
+    border-radius: 5px;
+    font-family: "Georgia", serif;
+}
+
+.search-btn {
+    padding: 0.5rem 1rem;
+    background-color: maroon;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Georgia", serif;
+    transition: background-color 0.3s;
+}
+
+.search-btn:hover {
+    background-color: #610b0b;
+}
+
+.slide-menu {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 100vh;
+    background-color: white;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease-in-out;
+    z-index: 1001;
+}
+
+.slide-menu.active {
+    right: 0;
+}
+
+.menu-header {
+    background-color: #4e0404;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.menu-list {
+    list-style: none;
+    padding: 1rem 0;
+}
+
+.menu-list li {
+    border-bottom: 1px solid #eee;
+}
+
+.menu-list a {
+    display: block;
+    padding: 1rem;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.menu-list a:hover {
+    background-color: #f0f0f0;
+}
+
+main {
+    margin-top: 88px;
+}
+
+.welcome-banner {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.banner-img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+.center-logo {
+    position: absolute;
+    top: 31%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 280px;
+    height: 280px;
+    border: none;
+    background-color: transparent;
+    padding: 5px;
+    z-index: 2;
+}
+
+.banner-content {
+    position: absolute;
+    top: 68%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2rem;
+    border-radius: 10px;
+    z-index: 1;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    width: 1200px;
+}
+
+.banner-content h2 {
+    font-size: 1.9rem;
+    margin: 0 auto 1rem;
+    max-width: 1200px;
+}
+
+.school-quote {
+    font-size: 1.5rem;
+    font-weight: regular;
+    margin-bottom: 2rem;
+}
+
+.admission-criteria {
+    background-color: rgb(255, 233, 233);
+    padding: 4rem 2rem;
+}
+
+.criteria-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.criteria-title {
+    color: #7d0b0b;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    font-family: "Georgia", serif;
+}
+
+.criteria-underline {
+    width: 80px;
+    height: 4px;
+    margin: 0 auto 3rem;
+    border-radius: 2px;
+}
+
+.criteria-cards {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.criteria-card {
+    background-color: whitesmoke;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    flex: 1;
+    min-width: 350px;
+    max-width: 400px;
+    text-align: left;
+}
+
+.card-title {
+    color: #7d0b0b;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    font-family: "Georgia", serif;
+    text-align: center;
+}
+
+.criteria-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.criteria-list li {
+    color: #333;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+    position: relative;
+    line-height: 1.5;
+    font-family: "Georgia", serif;
+}
+
+.criteria-list li::before {
+    content: "•";
+    color: #7d0b0b;
+    font-weight: bold;
+    font-size: 1.2rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.criteria-list li:last-child {
+    margin-bottom: 0;
+}
+
+.curriculum-section {
+    background-color: rgb(255, 233, 233);
+}
+
+.curriculum-container {
+    max-width: 2000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.curriculum-title {
+    color: #7d0b0b;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    font-family: "Georgia", serif;
+}
+
+.curriculum-underline {
+    width: 80px;
+    height: 4px;
+    margin: 0 auto 3rem;
+    border-radius: 2px;
+}
+
+.program-section {
+    margin-bottom: 4rem;
+}
+
+.program-title {
+    color: black;
+    font-size: 1.9rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    font-family: "Georgia", serif;
+    text-align: center;
+}
+
+.curriculum-cards {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.curriculum-card {
+    background-color: whitesmoke;
+    border-radius: 15px;
+    padding: 1.5rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    flex: 1;
+    min-width: 400px;
+    max-width: 600px;
+    text-align: left;
+}
+
+.curriculum-table {
+    width: 100%;
+}
+
+.table-header {
+    background-color: #7d0b0b;
+    color: white;
+    padding: 1rem;
+    border-radius: 8px 8px 0 0;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.table-header h4 {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+    font-family: "Georgia", serif;
+}
+
+.curriculum-table table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: "Georgia", serif;
+    font-size: 0.9rem;
+    background-color: white;
+}
+
+.curriculum-table th {
+    background-color: #f8f8f8;
+    color: #333;
+    padding: 0.8rem 0.5rem;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid #ddd;
+    font-size: 0.85rem;
+}
+
+.curriculum-table td {
+    padding: 0.6rem 0.5rem;
+    border: 1px solid #ddd;
+    text-align: left;
+    vertical-align: top;
+    line-height: 1.4;
+}
+
+.curriculum-table td:nth-child(2), 
+.curriculum-table td:nth-child(4), 
+.curriculum-table td:nth-child(5) { 
+    text-align: center;
+}
+
+.curriculum-table td:nth-child(3) { 
+    text-align: center;
+}
+
+.curriculum-table tbody tr:nth-child(even) {
+    background-color: #fafafa;
+}
+
+.curriculum-table tbody tr:hover {
+    background-color: #f0f0f0;
+}
+
+.curriculum-table tfoot td {
+    background-color: #7d0b0b;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 0.8rem 0.5rem;
+}
+
+.curriculum-table tfoot td:first-child {
+    text-align: left;
+    padding-left: 1rem;
+}
+
+.footer {
+    background-color: rgb(22, 22, 22);
+    color: white;
+    padding: 2rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 2rem;
+}
+
+.footer-left,
+.footer-middle,
+.footer-right {
+    flex: 1;
+}
+
+.footer-logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.footer-left h3,
+.footer-middle h3,
+.footer-right h3 {
+    margin-bottom: 1rem;
+}
+
+.footer-quote {
+    font-style: italic;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    max-width: 1200px;
+    margin: 1rem auto 0;
+}
+
+@media (max-width: 1200px) {
+    .curriculum-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .curriculum-card {
+        min-width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 1rem;
+    }
+    
+    .school-name {
+        font-size: 1.5rem;
+    }
+    
+    .nav-menu {
+        gap: 1rem;
+    }
+    
+    .nav-link {
+        padding: 0.3rem 0.6rem;
+        font-size: 0.9rem;
+    }
+    
+    .banner-content h2 {
+        font-size: 1.5rem;
+    }
+    
+    .school-quote {
+        font-size: 1.2rem;
+    }
+    
+    .criteria-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .criteria-card {
+        min-width: 100%;
+        max-width: 100%;
+    }
+    
+    .criteria-title {
+        font-size: 2rem;
+    }
+    
+    .curriculum-title {
+        font-size: 2rem;
+    }
+    
+    .program-title {
+        font-size: 1.5rem;
+    }
+    
+    .curriculum-table {
+        overflow-x: auto;
+    }
+    
+    .curriculum-table table {
+        min-width: 500px;
+        font-size: 0.8rem;
+    }
+    
+    .curriculum-table th,
+    .curriculum-table td {
+        padding: 0.5rem 0.3rem;
+    }
+    
+    .table-header h4 {
+        font-size: 1rem;
+    }
+    
+    .curriculum-card {
+        padding: 1rem;
+        min-width: 100%;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .admission-criteria,
+    .curriculum-section {
+        padding: 2rem 1rem;
+    }
+    
+    .criteria-title,
+    .curriculum-title {
+        font-size: 1.8rem;
+    }
+    
+    .curriculum-table table {
+        font-size: 0.7rem;
+    }
+    
+    .curriculum-table th,
+    .curriculum-table td {
+        padding: 0.4rem 0.2rem;
+    }
+    
+    .center-logo {
+        width: 200px;
+        height: 200px;
+    }
+}

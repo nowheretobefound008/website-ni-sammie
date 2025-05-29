@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover - PhilTech School</title>
+    <link rel="stylesheet" href="philtech_discover.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-left">
+            <img src="logo.png" alt="PhilTech Logo" class="logo">
+            <h1 class="school-name">PhilTech</h1>
+        </div>
+        <div class="header-right">
+            <nav class="nav-menu">
+                <a href="philtech_home.html" class="nav-link">Home</a>
+                <a href="philtech_inquire.html" class="nav-link">Inquire</a>
+                <a href="philtech_apply.html" class="nav-link">Apply</a>
+                <div class="search-icon" onclick="toggleSearch()">
+                    <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                </div>
+                <div class="menu-toggle" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="search-bar" id="searchBar">
+        <div class="search-container">
+            <input type="text" placeholder="Search..." class="search-input">
+            <button class="search-btn">Search</button>
+        </div>
+    </div>
+
+    <div class="slide-menu" id="slideMenu">
+        <div class="menu-header">
+            <h2>Menu</h2>
+            <button class="close-btn" onclick="toggleMenu()">&times;</button>
+        </div>
+        <ul class="menu-list">
+            <li><a href="philtech_discover.html">Discover</a></li>
+            <li><a href="philtech_admissions.html">Admissions</a></li>
+            <li><a href="philtech_offers.html">Offers</a></li>
+            <li><a href="philtech_connect.html">Connect</a></li>
+            <li><a href="philtech_developer.html">Developer Info</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <section class="welcome-banner">
+            <img src="banner.jpg" alt="PhilTech Banner" class="banner-img">
+            <img src="logo.png" alt="PhilTech Logo" class="center-logo">
+            <div class="banner-content">
+                <h2>Philippine Technological Institute of Science Arts and Trade Central Inc.</h2>
+                <h2>G.M.A Branch</h2>
+                <p class="school-quote">Global Success Through Academic Excellence</p>
+            </div>
+        </section>
+
+        <section class="faculty-section">
+            <h2 class="faculty-title">Our Faculty</h2>
+            
+            <div class="carousel-container">
+                <div class="carousel-wrapper">
+                    <button class="carousel-nav prev" id="prevBtn">
+                        <svg width="30" height="30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <polyline points="15,18 9,12 15,6"></polyline>
+                        </svg>
+                    </button>
+                    
+                    <div class="carousel-track-container">
+                        <div class="carousel-track" id="carouselTrack">
+                            <div class="faculty-card">
+                                <img src="sirraiven.jpg" alt="Faculty Member" class="faculty-image">
+                                <div class="faculty-info">
+                                    <div class="faculty-name">Raiven Gordon</div>
+                                    <div class="faculty-title-text">Computer Science Teacher</div>
+                                </div>
+                            </div>
+                            
+                            <div class="faculty-card">
+                                <img src="sirpats.jpg" alt="Faculty Member" class="faculty-image">
+                                <div class="faculty-info">
+                                    <div class="faculty-name">Francis Jun Patalen</div>
+                                    <div class="faculty-title-text">Computer Science Teacher</div>
+                                </div>
+                            </div>
+                            
+                            <div class="faculty-card center">
+                                <img src="siratienza.jpg" alt="Faculty Member" class="faculty-image">
+                                <div class="faculty-info">
+                                    <div class="faculty-name">Michael Atienza</div>
+                                    <div class="faculty-title-text">NSTP and P.E Teacher</div>
+                                </div>
+                            </div>
+                            
+                            <div class="faculty-card">
+                                <img src="sirjude.jpg" alt="Faculty Member" class="faculty-image">
+                                <div class="faculty-info">
+                                    <div class="faculty-name">Jude Rodriguez</div>
+                                    <div class="faculty-title-text">Mathematics Teacher</div>
+                                </div>
+                            </div>
+                            
+                            <div class="faculty-card">
+                                <img src="sirnori.jpg" alt="Faculty Member" class="faculty-image">
+                                <div class="faculty-info">
+                                    <div class="faculty-name">Honorio Lacerna</div>
+                                    <div class="faculty-title-text">English Teacher</div>
+                                </div>
+                            </div>
+
+                            <div class="faculty-card">
+                                <img src="sirgerald.jpg" alt="Faculty Member" class="faculty-image">
+                                <div class="faculty-info">
+                                    <div class="faculty-name">Gerald Ello</div>
+                                    <div class="faculty-title-text">Practical Research Teacher</div>
+                                </div>
+                            </div>
+
+                            <div class="faculty-card">
+                                <img src="sirf.jpg" alt="Faculty Member" class="faculty-image">
+                                <div class="faculty-info">
+                                    <div class="faculty-name">Ephraim Icabande</div>
+                                    <div class="faculty-title-text">Practical Research Teacher</div>
+                                </div>
+                            </div>
+
+                            <div class="faculty-card">
+                                <img src="raniel.jpg" alt="Faculty Member" class="faculty-image">
+                                <div class="faculty-info">
+                                    <div class="faculty-name">Rainiel Gordon</div>
+                                    <div class="faculty-title-text">Home Economics Teacher</div>
+                                </div>
+                            </div>
+
+                            <div class="faculty-card">
+                                <img src="maamyabut.jpg" alt="Faculty Member" class="faculty-image">
+                                <div class="faculty-info">
+                                    <div class="faculty-name">Edith Yabut</div>
+                                    <div class="faculty-title-text">Filipino Teacher</div>
+                                </div>
+                            </div>
+
+                            <div class="faculty-card">
+                                <img src="maamrivera.jpg" alt="Faculty Member" class="faculty-image">
+                                <div class="faculty-info">
+                                    <div class="faculty-name">Grace Rivera</div>
+                                    <div class="faculty-title-text">English Teacher</div>
+                                </div>
+                            </div>
+
+                            <div class="faculty-card">
+                                <img src="maammagno.jpg" alt="Faculty Member" class="faculty-image">
+                                <div class="faculty-info">
+                                    <div class="faculty-name">Joy Magno</div>
+                                    <div class="faculty-title-text">Home Economics Teacher</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button class="carousel-nav next" id="nextBtn">
+                        <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <polyline points="9,18 15,12 9,6"></polyline>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section class="school-history">
+            <h2>School History</h2>
+            <div class="history-content">
+                <img src="banny.jpg" alt="School History" class="history-img">
+                <div class="history-text">
+                    <p>The Philippine Technological Institute of Science Arts and Trade Inc. (PHILTECH) was founded in 2010 in Tanay, Rizal, by a diverse group of eleven professionals, including engineers, IT experts, and educators. Starting as a non-stock, non-profit institution, it initially offered two-year technical programs in Information Technology, Hotel and Restaurant Services, and Business Outsourcing Management. By 2013, its first graduates completed their studies, supported by TESDA-Rizal accreditation, and the school expanded with new branches in Sta. Rosa, Laguna, and General Mariano Alvarez (GMA), Cavite, serving over 1,160 students by 2013–2014.</p>
+                    <p>PHILTECH continued evolving to meet community needs, launching its first bachelor's program—Bachelor in Technical Vocational Teacher Education (Major in Food and Beverage Management)—at the GMA branch in 2021. By 2022–2023, it introduced additional degree programs, including Bachelor of Science in Computer Science and Office Administration, attracting 103 students. The institution emphasized quality instruction and facilities, aligning with TESDA standards and expanding its academic reach.</p>
+                    <p>Committed to fostering global success through accessible education, PHILTECH prioritizes technical-vocational training, academic excellence, and skill development. As a patriotic, non-sectarian institution, it focuses on empowering Filipino youth to become productive citizens. With a dynamic faculty and a mission centered on community service, PHILTECH remains dedicated to molding future leaders while upholding its founders' vision of blending innovation, education, and social responsibility.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="vision-mission">
+            <h2>PhilTech Vision and Mission</h2>
+            <div class="vm-container">
+                <div class="vision-box">
+                    <h3>Vision</h3>
+                    <p>Philippine Technological Institute of Science Arts and Trade, Inc. (PHILTECH) is dedicated to give quality education to the development of every Filipino. It aims to hone students who are values oriented and physically, academically, socially, and spiritually committed to the achievement of life-long learning and service to the nation.</p>
+                </div>
+                <div class="mission-box">
+                    <h3>Mission</h3>
+                    <p>PHILTECH shall emerge as one of the educational institutions in the Philippines that can  provide academic excellence, appropriate technology and produce graduates who are globally competitive and shall serve as pillar in this challenging world. </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="school-map">
+    <h2>School Map</h2>
+    <div class="map-container">
+        <div class="map-location">
+            <h3>PhilTech - G.M.A</h3>
+            <div class="map-image">
+                <img src="map.PNG" alt="PhilTech G.M.A Location Map" class="location-map">
+            </div>
+        </div>
+        <div class="map-location">
+            <h3>PhilTech - Tanay</h3>
+            <div class="map-image">
+                <img src="mapp.PNG" alt="PhilTech Tanay Location Map" class="location-map">
+            </div>
+        </div>
+    </div>
+</section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <img src="logo.png" alt="PhilTech Logo" class="footer-logo">
+                <h3>PhilTech</h3>
+                <p class="footer-quote">Global Success Through Academic Excellence</p>
+            </div>
+            <div class="footer-middle">
+                <h3>Contact Us</h3>
+                <p>philtechtestwebsite@gmail.com</p>
+                <p>(046) 409-94-90</p>
+            </div>
+            <div class="footer-right">
+                <h3>Location</h3>
+                <p>2nd Floor, CRDM Governor's Drive,</p>
+                <p>Brgy. Maderan G.M.A., Cavite</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2010 PhilTech. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="philtech_script.js"></script>
+</body>
+</html>
